@@ -56,6 +56,7 @@ export class HomePage {
     .subscribe(
       (data) => {
       console.log(data);
+      //this.res = data.body;
       this.res = JSON.parse(data._body);
     }, (err) => {
       console.log(err);

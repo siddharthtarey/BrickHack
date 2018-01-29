@@ -113,6 +113,7 @@ var HomePage = (function () {
         this.http.get('https://jsonplaceholder.typicode.com/posts')
             .subscribe(function (data) {
             console.log(data);
+            //this.res = data.body;
             _this.res = JSON.parse(data._body);
         }, function (err) {
             console.log(err);
